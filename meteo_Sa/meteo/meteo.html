@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le méteo</title>
+    <link rel="stylesheet" href="./meteo.css">
+</head>
+
+<body>
+    <!--En tête titre-->
+    <!--  -->
+    <header>
+
+        <div>
+            <img src="../Ressources/sun1.png" alt="Un soleil">
+            <h1>Ma station météo</h1>
+        </div>
+    </header>
+
+    <!--Contenu principal-->
+    <main>
+        <!--Éphéméride-->
+        <div id="ephe_table">
+            <section class="box_ephemeride">
+                <h2>&Eacute;ph&eacute;m&eacute;ride</h2>
+                <p>Nous sommes le <span id="date">date</span></p>
+                <p>Il est <span id="heure">heure</span></p>
+                <p>Le soleil se lève à <span id="heure_soleil">heure_soleil</span>;</p>
+                <p>Et se couche à <span id="heure_couche">heure_couche</span></p>
+                <p>Aujourd'hui nous fêtons les &lt;noms&gt;</p>
+            </section>
+            <!--Météo-->
+            <table class="box_table">
+                <tr>
+                    <th>Jeudi</th>
+                    <td><img src="../Ressources/eclaircies.png" alt="eclaircies"></td>
+                    <td>Eclaircies</td>
+                </tr>
+                <tr>
+                    <th>Vendredi</th>
+                    <td><img src="../Ressources/eclaircies.png" alt="eclaircies"></td>
+                    <td>Eclaircies</td>
+                </tr>
+                <tr>
+                    <th>Samedi</th>
+                    <td><img src="../Ressources/ensoleille.png" alt="ensoleille"></td>
+                    <td>Ensoleillé</td>
+                </tr>
+            </table>
+        </div>
+
+        <!--Températures-->
+        <section class="box_temp">
+            <h2>Températures</h2>
+            <div class="circle1"><span id="tmin">tmin</span></div>
+            <div>Min</div>
+            <div class="circle2"><span id="tmax">tmax</span></div>
+            <div>Max</div>
+            <div class="circle3"><span id="tmoy">tmoy</span></div>
+            <div>Moy</div>
+        </section>
+
+    </main>
+
+    <!--Pied de page-->
+    <footer>
+        <div>&copy;Mo&acirc;</div>
+        <div>Ça vous plaît? C'est Moâ qui l'a fait !</div>
+        <div class="contact">
+            <div>Contacter</div>
+            <a href="../Formulaire/form.html">Moa</a>
+        </div>
+        <!-- ./rsc/html/contact.html -->
+    </footer>
+<script src = "./meteo.js"></script>
+</body>
+
+</html>

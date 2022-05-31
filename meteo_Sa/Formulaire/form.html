@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./form.css">
+</head>
+<body>
+    
+    <form action="#" method="get" ></form>
+    
+    <fieldset>
+        <legend>Votre identité</legend>
+        <div>
+            <label for="nom"> Entrez votre nom</label>
+            <input type="text" name="nom" id="nom" placeholder="Votre nom"><br>
+        
+        </div><br>
+        <div>
+            <label for="prenom"> Entrez votre prénom</label>
+            <input type="text" name="prenom" id="prenom" placeholder="Votre prenom"><br>
+        
+        </div><br>
+        <div>
+            <label for="date"> Entrez votre date de naissance</label>
+            <input type="date" name="date" id="date" placeholder="Votre naissance"><br>
+        </div><br>
+        <div>
+            <label for="email"> Entrez votre email</label>
+            <input type="text" name="email" id="email" placeholder="Votre email"><br>
+        </div>
+    </fieldset><br>
+
+    <fieldset>
+        <legend>Votre genre</legend>
+        <div>
+            Votre genre :
+            <input type="radio" name="sexe" id="masculin" value="masculin">
+            <label for="masculin">Masculin</label>
+            <input type="radio" name="sexe" id="feminin" value="feminin">
+            <label for="feminin">Féminin</label>
+            <input type="radio" name="sexe" id="autre" value="autre">
+            <label for="autre">Autre</label>
+        </div>
+    </fieldset><br>
+      
+
+    <fieldset>
+        <div>
+            Votre âge :
+            <input type="age" name="age" id="age" placeholder="age">
+        </div>
+    </fieldset><br>
+          
+     
+    <fieldset>
+        <legend>Vos commentaires</legend>
+         <div>
+             <textarea name="comment" id="comment" cols="60" rows="10"></textarea>
+         </div>
+
+    </fieldset><br>
+
+      <div class="buton">
+          <input type="submit" value="Envoyer">
+          <input type="reset" value="Annuler">
+      </div>
+
+
+</body>
+</html>
